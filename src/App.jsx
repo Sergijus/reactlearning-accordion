@@ -10,7 +10,7 @@ const App = () => {
         <h1>Questions</h1>
         {questions.map((question) => {
           const { title, info, id } = question;
-          return <Question title={title} info={info} key={id} />;
+          return <Question {...question} key={id} />;
         })}
       </section>
     </main>
